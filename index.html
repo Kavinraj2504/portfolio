@@ -63,6 +63,9 @@
             color: var(--light);
             text-decoration: none;
             transition: color 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
         .nav-links a:hover {
@@ -118,23 +121,26 @@
         .project-card h3 {
             color: var(--primary);
             margin-bottom: 1rem;
-        }
-
-        .tech-stack {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin: 1rem 0;
-        }
-
-        .tech-item {
-            background: var(--secondary);
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
             display: flex;
             align-items: center;
             gap: 0.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: var(--secondary);
+            color: var(--light);
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn:hover {
+            background: var(--primary);
         }
 
         /* Contact Section */
@@ -181,9 +187,9 @@
     <nav class="container">
         <div class="logo">KR</div>
         <div class="nav-links">
-            <a href="/#home">Home</a>
-            <a href="/#projects">Projects</a>
-            <a href="/#contact">Contact</a>
+            <a href="/#home"><i class="fas fa-home"></i> Home</a>
+            <a href="/#projects"><i class="fas fa-folder"></i> Projects</a>
+            <a href="/#contact"><i class="fas fa-envelope"></i> Contact</a>
         </div>
     </nav>
 </header>
@@ -202,21 +208,27 @@
         <h2>Featured Projects</h2>
         <div class="projects-grid">
             <div class="project-card">
-                <h3>Google Maps Clone</h3>
+                <h3><i class="fas fa-map-marked-alt"></i> Google Maps Clone</h3>
                 <p>Interactive mapping solution with real-time tracking and route navigation.</p>
-                <a href="https://github.com/nikhilsathe07/CSS-Crafters" target="_blank" class="btn">View on GitHub</a>
+                <a href="https://github.com/nikhilsathe07/CSS-Crafters" target="_blank" class="btn">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
             </div>
 
             <div class="project-card">
-                <h3>YogiVerse</h3>
+                <h3><i class="fas fa-yoga"></i> YogiVerse</h3>
                 <p>Community platform for yoga enthusiasts with content sharing and leaderboards.</p>
-                <a href="https://github.com/programm3d/YogiVerse" target="_blank" class="btn">View on GitHub</a>
+                <a href="https://github.com/programm3d/YogiVerse" target="_blank" class="btn">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
             </div>
 
             <div class="project-card">
-                <h3>Educational Gamification</h3>
+                <h3><i class="fas fa-graduation-cap"></i> Educational Gamification</h3>
                 <p>Backend system for educational app with Redis caching and real-time features.</p>
-                <a href="https://github.com/Kavinraj2504/EdutechApp" target="_blank" class="btn">View on GitHub</a>
+                <a href="https://github.com/Kavinraj2504/EdutechApp" target="_blank" class="btn">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
             </div>
         </div>
     </div>
@@ -238,16 +250,6 @@
         </div>
     </div>
 </section>
-
-<script>
-    document.querySelectorAll('a[href^="/#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href').substring(1)).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-</script>
 </body>
 </html>
+

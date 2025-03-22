@@ -177,99 +177,77 @@
     </style>
 </head>
 <body>
-    <header>
-        <nav class="container">
-            <div class="logo">KR</div>
-            <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </nav>
-    </header>
+<header>
+    <nav class="container">
+        <div class="logo">KR</div>
+        <div class="nav-links">
+            <a href="/#home">Home</a>
+            <a href="/#projects">Projects</a>
+            <a href="/#contact">Contact</a>
+        </div>
+    </nav>
+</header>
 
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Kavinraj Rajasekaran</h1>
-                <p>Don’t just write code—I craft solutions. Passionate about building scalable, efficient, and user-friendly applications that make a real impact.</p>
+<section id="home" class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Kavinraj Rajasekaran</h1>
+            <p>Don’t just write code—I craft solutions. Passionate about building scalable, efficient, and user-friendly applications that make a real impact.</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="projects">
+    <div class="container">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Google Maps Clone</h3>
+                <p>Interactive mapping solution with real-time tracking and route navigation.</p>
+                <a href="https://github.com/nikhilsathe07/CSS-Crafters" target="_blank" class="btn">View on GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <h3>YogiVerse</h3>
+                <p>Community platform for yoga enthusiasts with content sharing and leaderboards.</p>
+                <a href="https://github.com/programm3d/YogiVerse" target="_blank" class="btn">View on GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Educational Gamification</h3>
+                <p>Backend system for educational app with Redis caching and real-time features.</p>
+                <a href="https://github.com/Kavinraj2504/EdutechApp" target="_blank" class="btn">View on GitHub</a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>Featured Projects</h2>
-            <div class="projects-grid">
-                <!-- Google Maps Clone -->
-                <div class="project-card">
-                    <h3>Google Maps Clone</h3>
-                    <p>Interactive mapping solution with real-time tracking and route navigation.</p>
-                    <div class="tech-stack">
-                        <span class="tech-item"><i class="fab fa-js"></i>JavaScript</span>
-                        <span class="tech-item"><i class="fas fa-map"></i>Google Maps API</span>
-                        <span class="tech-item"><i class="fab fa-html5"></i>HTML5</span>
-                        <span class="tech-item"><i class="fab fa-css3"></i>CSS3</span>
-                    </div>
-                    <a href="https://github.com/nikhilsathe07/CSS-Crafters" target="_blank" class="btn">View on GitHub</a>
-                </div>
-
-                <!-- YogiVerse -->
-                <div class="project-card">
-                    <h3>YogiVerse</h3>
-                    <p>Community platform for yoga enthusiasts with content sharing and leaderboards.</p>
-                    <div class="tech-stack">
-                        <span class="tech-item"><i class="fab fa-react"></i>React</span>
-                        <span class="tech-item"><i class="fab fa-node"></i>Node.js</span>
-                        <span class="tech-item"><i class="fas fa-database"></i>MongoDB</span>
-                        <span class="tech-item"><i class="fas fa-shield-alt"></i>JWT</span>
-                    </div>
-                    <a href="https://github.com/programm3d/YogiVerse" target="_blank" class="btn">View on GitHub</a>
-                </div>
-
-                <!-- EduTech -->
-                <div class="project-card">
-                    <h3>Educational Gamification</h3>
-                    <p>Backend system for educational app with Redis caching and real-time features.</p>
-                    <div class="tech-stack">
-                        <span class="tech-item"><i class="fab fa-node"></i>Node.js</span>
-                        <span class="tech-item"><i class="fas fa-database"></i>Redis</span>
-                        <span class="tech-item"><i class="fas fa-network-wired"></i>Socket.io</span>
-                        <span class="tech-item"><i class="fas fa-lock"></i>RBAC</span>
-                    </div>
-                    <a href="https://github.com/Kavinraj2504/EdutechApp" target="_blank" class="btn">View on GitHub</a>
-                </div>
-            </div>
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Get in Touch</h2>
+        <div class="contact-links">
+            <a href="https://www.linkedin.com/in/kavinraj-rajasekaran" target="_blank" class="contact-link">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:kavinraj25042003@gmail.com" class="contact-link">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://github.com/Kavinraj2504" target="_blank" class="contact-link">
+                <i class="fab fa-github"></i>
+            </a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Get in Touch</h2>
-            <div class="contact-links">
-                <a href="www.linkedin.com/in/kavinraj-rajasekaran" target="_blank" class="contact-link">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="mailto:kavinraj25042003@gmail.com" class="contact-link">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://github.com/Kavinraj2504" target="_blank" class="contact-link">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+<script>
+    document.querySelectorAll('a[href^="/#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href').substring(1)).scrollIntoView({
+                behavior: 'smooth'
             });
         });
-    </script>
+    });
+</script>
 </body>
 </html>

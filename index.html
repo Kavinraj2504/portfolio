@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavinraj Rajasekaran | Full Stack Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2ecc71;
+            --secondary: #27ae60;
+            --dark: #2c3e50;
+            --light: #ecf0f1;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: var(--dark);
+            color: var(--light);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Header Styles */
+        header {
+            background: rgba(44, 62, 80, 0.95);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--light);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 8rem 0 4rem;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Projects Section */
+        .projects {
+            padding: 4rem 0;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+
+        .tech-item {
+            background: var(--secondary);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-link {
+            font-size: 2rem;
+            color: var(--light);
+            transition: color 0.3s;
+        }
+
+        .contact-link:hover {
+            color: var(--primary);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">KR</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Kavinraj Rajasekaran</h1>
+                <p>Don’t just write code—I craft solutions. Passionate about building scalable, efficient, and user-friendly applications that make a real impact.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Google Maps Clone -->
+                <div class="project-card">
+                    <h3>Google Maps Clone</h3>
+                    <p>Interactive mapping solution with real-time tracking and route navigation.</p>
+                    <div class="tech-stack">
+                        <span class="tech-item"><i class="fab fa-js"></i>JavaScript</span>
+                        <span class="tech-item"><i class="fas fa-map"></i>Google Maps API</span>
+                        <span class="tech-item"><i class="fab fa-html5"></i>HTML5</span>
+                        <span class="tech-item"><i class="fab fa-css3"></i>CSS3</span>
+                    </div>
+                    <a href="https://github.com/nikhilsathe07/CSS-Crafters" target="_blank" class="btn">View on GitHub</a>
+                </div>
+
+                <!-- YogiVerse -->
+                <div class="project-card">
+                    <h3>YogiVerse</h3>
+                    <p>Community platform for yoga enthusiasts with content sharing and leaderboards.</p>
+                    <div class="tech-stack">
+                        <span class="tech-item"><i class="fab fa-react"></i>React</span>
+                        <span class="tech-item"><i class="fab fa-node"></i>Node.js</span>
+                        <span class="tech-item"><i class="fas fa-database"></i>MongoDB</span>
+                        <span class="tech-item"><i class="fas fa-shield-alt"></i>JWT</span>
+                    </div>
+                    <a href="https://github.com/programm3d/YogiVerse" target="_blank" class="btn">View on GitHub</a>
+                </div>
+
+                <!-- EduTech -->
+                <div class="project-card">
+                    <h3>Educational Gamification</h3>
+                    <p>Backend system for educational app with Redis caching and real-time features.</p>
+                    <div class="tech-stack">
+                        <span class="tech-item"><i class="fab fa-node"></i>Node.js</span>
+                        <span class="tech-item"><i class="fas fa-database"></i>Redis</span>
+                        <span class="tech-item"><i class="fas fa-network-wired"></i>Socket.io</span>
+                        <span class="tech-item"><i class="fas fa-lock"></i>RBAC</span>
+                    </div>
+                    <a href="https://github.com/Kavinraj2504/EdutechApp" target="_blank" class="btn">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-links">
+                <a href="www.linkedin.com/in/kavinraj-rajasekaran" target="_blank" class="contact-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:kavinraj25042003@gmail.com" class="contact-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://github.com/Kavinraj2504" target="_blank" class="contact-link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

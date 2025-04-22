@@ -22,7 +22,7 @@ html {
 }
 
 body {
-    font-family:"Comic Sans MS", cursive;
+    font-family:"Comic Sans MS";
     background-color: var(--navy);
     color: var(--lightest-slate);
     line-height: 1.6;
